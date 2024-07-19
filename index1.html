@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+            border-radius: 8px;
+        }
+        h2 {
+            text-align: center;
+        }
+        input[type=text], input[type=password], input[type=email] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=submit] {
+            width: 100%;
+            background-color: #00a2ff;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2><u>Registration Form</u></h2>
+    <form action="main.java" method="post">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="First name" required>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lastname" required>
+
+         <span>Gender:</span>
+         <input type="radio" name="Gender" id="m">
+         <label for="m">Male</label>
+         <input type="radio" name="Gender" id="f">
+         <label for="f">Female</label><br><br>
+         <label for="age">Age:</label>
+         <input type="number" name="age" id="age"><br><br>
+         <label for="date">Date:</label>
+         <input type="date" name="date" id="date"><br><br>
+         <label for="number">Contact No:</label>
+         <input type="number" name="number" id="number"><br><br>
+         <label for="file">Marksheet:</label>
+         <input type="file" name="file" id="file"><br><br>
+         <span>Course:</span>
+         <select name="branch" id="branch">
+            <option value="computer science">Computer science</option>
+            <option value="IT">IT</option>
+            <option value="civil">Civil</option>
+            <option value="mech">Mech</option>
+            <option value="EEE">EEE</option>
+            <option value="ECE">ECE</option>
+         </select><br><br>
+         <span>Language:</span>
+         <input type="checkbox" name="Language" id="english">
+         <label for="english">English</label>
+         <input type="checkbox" name="Language" id="Hindi">
+         <label for="Hindi">Hindi</label><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" pattern="[A-Za-z0-9]+\.@gmail+\.+[A-Za-z]{2,}" required >
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="8" required>
+        <textarea name="" id=""></textarea>
+        
+
+        <input type="submit" value="Register">
+    </form>
+</div>
+
+</body>
+</html>

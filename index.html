@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+  </head>
+  <body>
+    <form action="main.java" method="post">
+      <fieldset>
+        <legend>Login Page</legend>
+        <img src="login.jpg" alt="" /><br /><br />
+        <label for="name">Username:</label>
+        <input
+          type="text"
+          name="un"
+          id="name"
+          pattern="[A-Za-z]{3,}"
+          required
+        /><br /><br />
+        <label for="last">Email Id:</label>
+        <input
+          type="email"
+          name="en"
+          id="last"
+          pattern="[A-Za-z0-9]+\.@gmail+\.+[A-Za-z]{2,}"
+          required
+        /><br /><br />
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          name="pwd"
+          id="password"
+          minlength="8"
+        /><br /><br />
+        <input type="submit" value="submit" /><br /><br />
+        <a href="index2.html">Forget Password?</a><br /><br />
+        <a href="index1.html" target="_blank">Registration Form</a>
+      </fieldset>
+    </form>
+  </body>
+</html>
